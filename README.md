@@ -28,7 +28,9 @@ git config --global user.name "Your Github username here"
 
 ```
 <h3>If everything's going well. The terminal will show nothing but your own commands, like this:</h3>
-<img src="https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/710bfbe1-f490-4661-9715-baf971e66870">
+
+![螢幕擷取畫面 (733)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/880efb93-0bcf-4189-9bc9-e6a26312d1ce)
+
 
 <h1>Initialse Git Repo</h1>
 <h3> First we'll clone this repo into your workstation using `git clone`, the files will automatically saved in where the terminal is running</h3>
@@ -39,6 +41,11 @@ git config --global user.name "Your Github username here"
 
 
 ![螢幕擷取畫面 (734)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/5ca44726-b181-4714-9e07-de7752592bc4)
+<h1>Initialise Folder</h1>
+<h3>Once you clone the project files, open the file by clicking open folder in VS Code. Now VS Code will store the address of the project</h3>
+
+![螢幕擷取畫面 (741)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/7b281fd6-6240-423c-87ad-dabeca4c798a)
+**The folder should be the one contains the .gbsproj**
 
 <h1>Push and Fetch</h1>
 <h2>Before commiting chnages it's importnat to fetch first to see the latest changes!!!</h2>
