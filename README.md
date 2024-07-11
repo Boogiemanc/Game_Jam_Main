@@ -34,6 +34,9 @@ git config --global user.name "Your Github username here"
 
 <h1>Initialse Git Repo</h1>
 <h3> First we'll clone this repo into your workstation using `git clone`, the files will automatically saved in where the terminal is running</h3>
+
+![螢幕擷取畫面 (749)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/e8f59a12-658c-41ed-b91d-a66f3cd9a597)
+
 <h3>You can check the location by looking at the header of each commands in the termminal</h3>
 
 <h3>Go to Nav bar and click Source Control, we'll link this repo to the PC: </h3>
