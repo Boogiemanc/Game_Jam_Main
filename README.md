@@ -41,3 +41,10 @@ git config --global user.name "Your Github username here"
 ![螢幕擷取畫面 (734)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/5ca44726-b181-4714-9e07-de7752592bc4)
 
 <h1>Push and Fetch</h1>
+<h2>Before commiting chnages it's importnat to fetch first to see the latest changes!!!</h2>
+
+![螢幕擷取畫面 (745)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/1999793b-dbfc-4ae4-b06b-5fd774dd551f)
+
+![螢幕擷取畫面 (743)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/33599c25-434f-4c6c-916c-4599af6e1f4d)
+
+![螢幕擷取畫面 (746)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/0c38bb79-46a0-4699-9cf3-a60ea8aa97ce)
