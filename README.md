@@ -35,7 +35,7 @@ git config --global user.name "Your Github username here"
 <h3>You can check the location by looking at the header of each commands in the termminal</h3>
 
 <h3>Go to Nav bar and click Source Control, we'll link this repo to the PC: </h3>
-<h3>Select `add remote` in `"Views and More Actions > Remote` theb paste the repo link on the top search bar</h3>
+<h3>Select `add remote` in `"Views and More Actions > Remote` then paste the repo link on the top search bar</h3>
 
 
 ![螢幕擷取畫面 (734)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/5ca44726-b181-4714-9e07-de7752592bc4)
@@ -44,7 +44,10 @@ git config --global user.name "Your Github username here"
 <h2>Before commiting chnages it's importnat to fetch first to see the latest changes!!!</h2>
 
 ![螢幕擷取畫面 (745)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/1999793b-dbfc-4ae4-b06b-5fd774dd551f)
+<h2>Once done, write a small message and press commit, then sync changes</h2>
 
 ![螢幕擷取畫面 (743)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/33599c25-434f-4c6c-916c-4599af6e1f4d)
+
+<h2>Your commit should be push to github and should be shown on the website</h2>
 
 ![螢幕擷取畫面 (746)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/0c38bb79-46a0-4699-9cf3-a60ea8aa97ce)
