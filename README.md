@@ -54,7 +54,10 @@ git config --global user.name "Your Github username here"
 <h2>Once done, write a small message and press commit, then sync changes</h2>
 
 ![螢幕擷取畫面 (743)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/33599c25-434f-4c6c-916c-4599af6e1f4d)
+![螢幕擷取畫面 (744)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/60f2e156-06a4-42b7-8b0f-d7f58d8939b3)
 
-<h2>Your commit should be push to github and should be shown on the website</h2>
+
+
+<h2>Your connits are now on github</h2>
 
 ![螢幕擷取畫面 (746)](https://github.com/Boogiemanc/Game_Jam_Main/assets/71361226/0c38bb79-46a0-4699-9cf3-a60ea8aa97ce)
