@@ -13842,7 +13842,7 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "Great job new one\nHere's your reward",
+                                                                                    "No bad Kid",
                                                                                     "You get the\nSW Upper KEY!"
                                                                                 ],
                                                                                 "avatarId": ""
@@ -14105,14 +14105,6 @@
                                             ]
                                         },
                                         "id": "b7b749fb-ed89-4a31-94d6-95bcd36502e1"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": "",
-                                            "avatarId": ""
-                                        },
-                                        "id": "8b1d24ac-548a-46cd-adae-3b166dbfd13f"
                                     }
                                 ],
                                 "false": []
@@ -19191,14 +19183,6 @@
                     "symbol": "actor_3",
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
-                            "args": {
-                                "text": "",
-                                "avatarId": ""
-                            },
-                            "id": "558d99f5-42aa-4ef8-aa2e-9d286d1e57d1"
-                        },
-                        {
                             "command": "EVENT_IF",
                             "args": {
                                 "condition": {
@@ -19257,12 +19241,13 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
+                                                "This is the\nGreat Hall ",
                                                 "No one can get in\nexcept servants ",
                                                 "and close \nrelatives ",
                                                 "You have to prove \nyourself first"
                                             ],
                                             "avatarId": "",
-                                            "__collapse": true
+                                            "__collapse": false
                                         },
                                         "id": "3b4a1f4a-562b-4916-99e5-85ddcd9dbfc9"
                                     }
@@ -64070,7 +64055,7 @@
         "showCollisionSlopeTiles": true,
         "showCollisionExtraTiles": true,
         "worldScrollX": 638,
-        "worldScrollY": 727,
+        "worldScrollY": 415,
         "zoom": 125,
         "sgbEnabled": false,
         "customHead": "",

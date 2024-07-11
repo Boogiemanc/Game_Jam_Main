@@ -3189,8 +3189,8 @@
             "autoFadeSpeed": 1,
             "id": "19f64ed4-81a2-4f43-aa5d-8acab241baf9",
             "symbol": "scene_5",
-            "x": 880,
-            "y": 1488,
+            "x": 856,
+            "y": 1368,
             "actors": [],
             "triggers": [
                 {
@@ -6032,8 +6032,8 @@
             "autoFadeSpeed": 1,
             "id": "2bbdd0a8-f1ad-4ba9-9797-0ecf3ea66c81",
             "symbol": "scene_8",
-            "x": 1984,
-            "y": 488,
+            "x": 1744,
+            "y": 456,
             "actors": [],
             "triggers": [
                 {
@@ -9916,8 +9916,8 @@
             "autoFadeSpeed": 1,
             "id": "0e2b44bf-ae48-4315-ba53-807c9d5ca3b0",
             "symbol": "scene_13",
-            "x": 1120,
-            "y": 1488,
+            "x": 1096,
+            "y": 1368,
             "actors": [],
             "triggers": [
                 {
@@ -9996,8 +9996,8 @@
                 {
                     "name": "",
                     "id": "aead6606-c62c-416e-af53-b1692d4a18a9",
-                    "x": 5,
-                    "y": 9,
+                    "x": 6,
+                    "y": 10,
                     "symbol": "trigger_101",
                     "width": 4,
                     "height": 2,
@@ -11507,8 +11507,8 @@
             "autoFadeSpeed": 1,
             "id": "80bf1f71-51a2-4b45-862d-a358da8a90c5",
             "symbol": "scene_15",
-            "x": 2224,
-            "y": 488,
+            "x": 1984,
+            "y": 456,
             "actors": [],
             "triggers": [
                 {
@@ -17706,8 +17706,8 @@
             "autoFadeSpeed": 1,
             "id": "99800e61-d1fb-4771-971b-f062536f7035",
             "symbol": "scene_21",
-            "x": 824,
-            "y": 1160,
+            "x": 832,
+            "y": 1136,
             "actors": [
                 {
                     "name": "",
@@ -17744,9 +17744,6 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You lost your\nstuff as well?",
-                                                "I saw the cloud \nflew towards",
-                                                "NE Tower\n",
                                                 "Hope you get\nYour stuff back"
                                             ],
                                             "avatarId": "",
@@ -17803,12 +17800,47 @@
                                                             "Wait...\nThat's my ring!",
                                                             "You lost your\nstuff as well?",
                                                             "I saw the cloud \nflew towards ",
-                                                            "NE Tower"
+                                                            "NE Tower",
+                                                            "Let me help u\na bit",
+                                                            "You get the SW\nTower Key!"
                                                         ],
                                                         "avatarId": "",
                                                         "__collapse": false
                                                     },
                                                     "id": "01afdc5b-2bfb-4ac3-9c2b-abfe703f9b77"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "9",
+                                                        "value": {
+                                                            "type": "true"
+                                                        },
+                                                        "__collapse": true
+                                                    },
+                                                    "id": "44cac21e-1c81-42be-980b-849e71a41a60"
+                                                },
+                                                {
+                                                    "command": "EVENT_SAVE_DATA",
+                                                    "args": {
+                                                        "saveSlot": 0,
+                                                        "__scriptTabs": "save",
+                                                        "__collapse": true
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_PEEK_DATA",
+                                                                "args": {
+                                                                    "variableDest": "9",
+                                                                    "variableSource": "9",
+                                                                    "saveSlot": 0
+                                                                },
+                                                                "id": "72362d17-d831-4de1-b5f9-40dfa205a2b4"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "86ed640a-fc27-49d0-aff4-e73db1d7820d"
                                                 }
                                             ],
                                             "false": []
@@ -18608,8 +18640,8 @@
             "autoFadeSpeed": 1,
             "id": "edcc10bf-9e8d-415f-81a6-fbc6bd0ecd05",
             "symbol": "scene_23",
-            "x": 1216,
-            "y": 640,
+            "x": 1000,
+            "y": 656,
             "actors": [
                 {
                     "name": "",
@@ -19165,8 +19197,8 @@
             "autoFadeSpeed": 1,
             "id": "dd2d7bc9-de76-4e00-b4ac-a0dace4e1252",
             "symbol": "scene_24",
-            "x": 1024,
-            "y": 648,
+            "x": 808,
+            "y": 664,
             "actors": [
                 {
                     "name": "",
@@ -64054,9 +64086,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": true,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 638,
-        "worldScrollY": 415,
-        "zoom": 125,
+        "worldScrollX": 869,
+        "worldScrollY": 184,
+        "zoom": 175,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
@@ -64083,9 +64115,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
+            205,
             412,
-            875
+            700
         ],
         "showNavigator": true,
         "defaultFontId": "7cd557a6-e7e8-413b-8caf-25e788bd3519",
