@@ -1748,24 +1748,6 @@
                     "children": {
                         "true": [
                             {
-                                "command": "EVENT_TEXT",
-                                "args": {
-                                    "text": [
-                                        "In this game you \nhave to search",
-                                        "items and help\nothers",
-                                        "Some items are\nhidden in corners!",
-                                        "Basic Controls\n",
-                                        "A: interact\narrow keys: move",
-                                        "Start: Map",
-                                        "Select:\nsave\notherSettings",
-                                        "Have fun!"
-                                    ],
-                                    "avatarId": "",
-                                    "__collapse": true
-                                },
-                                "id": "dd011f1e-36d3-442f-ac1b-e79319f9bb1a"
-                            },
-                            {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
                                     "sceneId": "57b34149-0db2-4975-b3c6-495eca507272",
@@ -6224,14 +6206,6 @@
                         "customEventId": "107e49ea-5462-42c3-ac4a-5ecf013453e7"
                     },
                     "id": "47ba9b54-9bf9-4398-b463-65126344e606"
-                },
-                {
-                    "command": "EVENT_TEXT",
-                    "args": {
-                        "text": "",
-                        "avatarId": ""
-                    },
-                    "id": "678129d6-9712-4333-985f-a1aa6819fa44"
                 }
             ],
             "playerHit1Script": [],
@@ -6868,7 +6842,7 @@
                                     "type": "eq",
                                     "valueA": {
                                         "type": "variable",
-                                        "value": "8"
+                                        "value": "24"
                                     },
                                     "valueB": {
                                         "type": "false"
@@ -6882,9 +6856,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You open the \nbottle and smell",
-                                                "It's wine!",
-                                                "You take the WINE"
+                                                "You open the \nbottle",
+                                                "It's empty inside",
+                                                "You take the bottle"
                                             ],
                                             "avatarId": ""
                                         },
@@ -6893,7 +6867,7 @@
                                     {
                                         "command": "EVENT_SET_VALUE",
                                         "args": {
-                                            "variable": "8",
+                                            "variable": "24",
                                             "value": {
                                                 "type": "true"
                                             },
@@ -6931,7 +6905,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "There's more wine\non the table but",
+                                    "There's bottles\non the table but",
                                     "It's not worth the \nrisk to *get* more"
                                 ],
                                 "avatarId": ""
@@ -13800,7 +13774,7 @@
                                                                 "value": 1
                                                             }
                                                         },
-                                                        "__collapseElse": true
+                                                        "__collapseElse": false
                                                     },
                                                     "children": {
                                                         "true": [
@@ -13811,7 +13785,7 @@
                                                                         "Give me the Wine \nQUICK"
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__collapse": false
+                                                                    "__collapse": true
                                                                 },
                                                                 "id": "aa66ae7f-6c93-461e-9c3a-7c8b9e71a218"
                                                             },
@@ -13829,7 +13803,7 @@
                                                                         }
                                                                     },
                                                                     "__collapseElse": false,
-                                                                    "__collapse": false
+                                                                    "__collapse": true
                                                                 },
                                                                 "children": {
                                                                     "true": [
@@ -13840,7 +13814,8 @@
                                                                                     "No bad Kid",
                                                                                     "You get the\nSW Upper KEY!"
                                                                                 ],
-                                                                                "avatarId": ""
+                                                                                "avatarId": "",
+                                                                                "__collapse": false
                                                                             },
                                                                             "id": "ef4489f5-b346-46d3-9698-225f7a766039"
                                                                         },
@@ -13936,80 +13911,82 @@
                                                                 "id": "9d53592a-a4f7-4cfb-8944-0e93fcd2a708"
                                                             }
                                                         ],
-                                                        "false": []
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "You pass the \nHoney"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": false
+                                                                },
+                                                                "id": "75549e07-a474-4287-b2f4-04e18393b007"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_CAMERA_SHAKE",
+                                                                "args": {
+                                                                    "time": 0.1,
+                                                                    "frames": 30,
+                                                                    "shakeDirection": "horizontal",
+                                                                    "magnitude": {
+                                                                        "type": "number",
+                                                                        "value": 5
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "1e09d3f0-13b8-4e35-be48-6695aae38dc2"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Wait!\nDon't leave yet!"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "549d4d3a-8dca-4ece-96be-5dc7386ecc64"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_CAMERA_SHAKE",
+                                                                "args": {
+                                                                    "time": 0.2,
+                                                                    "frames": 30,
+                                                                    "shakeDirection": "horizontal",
+                                                                    "magnitude": {
+                                                                        "type": "number",
+                                                                        "value": 5
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "77b1783d-f6b4-4954-a60c-29aa54be113b"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Give me the Wine \nQUICK"
+                                                                    ],
+                                                                    "avatarId": "",
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "78ea0f5b-6891-4166-8dce-a34c6d48e74f"
+                                                            },
+                                                            {
+                                                                "command": "EVENT_SET_VALUE",
+                                                                "args": {
+                                                                    "variable": "23",
+                                                                    "value": {
+                                                                        "type": "true"
+                                                                    },
+                                                                    "__collapse": true
+                                                                },
+                                                                "id": "619b1dbf-ae56-43eb-8d16-5070514d191a"
+                                                            }
+                                                        ]
                                                     },
                                                     "id": "357e075a-c3b7-4983-a3b1-ded9b110f450"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "You pass the \nHoney"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "75549e07-a474-4287-b2f4-04e18393b007"
-                                                },
-                                                {
-                                                    "command": "EVENT_CAMERA_SHAKE",
-                                                    "args": {
-                                                        "time": 0.1,
-                                                        "frames": 30,
-                                                        "shakeDirection": "horizontal",
-                                                        "magnitude": {
-                                                            "type": "number",
-                                                            "value": 5
-                                                        },
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "1e09d3f0-13b8-4e35-be48-6695aae38dc2"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Wait!\nDon't leave yet!"
-                                                        ],
-                                                        "avatarId": "",
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "549d4d3a-8dca-4ece-96be-5dc7386ecc64"
-                                                },
-                                                {
-                                                    "command": "EVENT_CAMERA_SHAKE",
-                                                    "args": {
-                                                        "time": 0.2,
-                                                        "frames": 30,
-                                                        "shakeDirection": "horizontal",
-                                                        "magnitude": {
-                                                            "type": "number",
-                                                            "value": 5
-                                                        },
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "77b1783d-f6b4-4954-a60c-29aa54be113b"
-                                                },
-                                                {
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "Give me the Wine \nQUICK"
-                                                        ],
-                                                        "avatarId": ""
-                                                    },
-                                                    "id": "78ea0f5b-6891-4166-8dce-a34c6d48e74f"
-                                                },
-                                                {
-                                                    "command": "EVENT_SET_VALUE",
-                                                    "args": {
-                                                        "variable": "23",
-                                                        "value": {
-                                                            "type": "true"
-                                                        },
-                                                        "__collapse": true
-                                                    },
-                                                    "id": "619b1dbf-ae56-43eb-8d16-5070514d191a"
                                                 }
                                             ],
                                             "false": [
@@ -16884,7 +16861,7 @@
                                     "type": "eq",
                                     "valueA": {
                                         "type": "variable",
-                                        "value": "0"
+                                        "value": "19"
                                     },
                                     "valueB": {
                                         "type": "false"
@@ -18117,6 +18094,151 @@
                     "id": "a4c4fab0-3a2c-4f8a-8490-6cb915d046b6",
                     "x": 18,
                     "y": 17
+                },
+                {
+                    "name": "",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+                    "direction": "down",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_8",
+                    "script": [
+                        {
+                            "command": "EVENT_IF",
+                            "args": {
+                                "condition": {
+                                    "type": "eq",
+                                    "valueA": {
+                                        "type": "variable",
+                                        "value": "8"
+                                    },
+                                    "valueB": {
+                                        "type": "false"
+                                    }
+                                },
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "you look at the \nspill and smell",
+                                                "It's wine!",
+                                                "You wonder if\nthere's",
+                                                "anything to hold\nit"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "36d2ce58-814d-4752-a1f8-ae88de0c181e"
+                                    },
+                                    {
+                                        "command": "EVENT_IF",
+                                        "args": {
+                                            "condition": {
+                                                "type": "eq",
+                                                "valueA": {
+                                                    "type": "variable",
+                                                    "value": "24"
+                                                },
+                                                "valueB": {
+                                                    "type": "true"
+                                                }
+                                            },
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "You use the\ncontainer to ",
+                                                            "collect the wine\n",
+                                                            "You got a bottle\nof Wine"
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "8707befb-3388-4c45-b7ba-17ec9ac42ac2"
+                                                },
+                                                {
+                                                    "command": "EVENT_SET_VALUE",
+                                                    "args": {
+                                                        "variable": "8",
+                                                        "value": {
+                                                            "type": "true"
+                                                        },
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "b9d5b9e5-5eef-4db9-8040-b0196f0b4ed4"
+                                                },
+                                                {
+                                                    "command": "EVENT_SAVE_DATA",
+                                                    "args": {
+                                                        "saveSlot": 0,
+                                                        "__scriptTabs": "save"
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_PEEK_DATA",
+                                                                "args": {
+                                                                    "variableDest": "9",
+                                                                    "variableSource": "9",
+                                                                    "saveSlot": 0
+                                                                },
+                                                                "id": "7069301c-17fa-41ad-be1c-949324c8cbe6"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "70d1dd66-4cc6-4d63-b3c6-a6abcef3528e"
+                                                }
+                                            ],
+                                            "false": []
+                                        },
+                                        "id": "7dc1e825-6f95-4048-9557-90b44a98b668"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The spills are\n everywhere...."
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "22618dc3-7271-4d82-af8e-dca75629e496"
+                                    }
+                                ]
+                            },
+                            "id": "3d4c8b63-e027-4a1e-921f-ca02954ea9a4"
+                        }
+                    ],
+                    "startScript": [],
+                    "updateScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "03d06c5b-085e-4576-9a74-c7636bf509fe"
+                        }
+                    ],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "fd9cd4e6-8ba4-42dd-8e93-e5fde993e0df",
+                    "x": 14,
+                    "y": 1
                 }
             ],
             "triggers": [
@@ -19514,45 +19636,21 @@
                     "height": 2,
                     "script": [
                         {
-                            "command": "EVENT_IF_INPUT",
+                            "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "input": [
-                                    "a",
-                                    "b",
-                                    "up"
-                                ],
-                                "__collapseElse": true
+                                "sceneId": "6a39809a-6f26-4112-917a-a47cbe8f9c6c",
+                                "x": {
+                                    "type": "number",
+                                    "value": 14
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 13
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
                             },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "6a39809a-6f26-4112-917a-a47cbe8f9c6c",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 14
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 13
-                                            },
-                                            "direction": "",
-                                            "fadeSpeed": "2"
-                                        },
-                                        "id": "6230d1c6-a4ae-43d5-93f5-f496d9e97eab"
-                                    },
-                                    {
-                                        "command": "EVENT_FADE_OUT",
-                                        "args": {
-                                            "speed": "2"
-                                        },
-                                        "id": "53827401-2cfa-48a5-9c70-8621fcbfea25"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "477fe531-f7a7-4ffd-86cc-aa39706d3b11"
+                            "id": "6230d1c6-a4ae-43d5-93f5-f496d9e97eab"
                         }
                     ],
                     "leaveScript": []
@@ -21757,6 +21855,17 @@
                             },
                             "children": {
                                 "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I have to deliver the \nletter and report",
+                                                "to my lord!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "4fc870b6-bfac-47e5-a7a0-31f3f5647f1a"
+                                    },
                                     {
                                         "command": "EVENT_ACTOR_MOVE_TO",
                                         "args": {
@@ -26206,7 +26315,9 @@
             "height": 10,
             "imageWidth": 120,
             "imageHeight": 80,
-            "filename": "gate_closemenu controlls small.png"
+            "filename": "gate_closemenu controlls small.png",
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "33d378cd-f5e4-4502-ab65-9cc4c8aa4dda",
@@ -26377,18 +26488,6 @@
             "autoColor": false
         },
         {
-            "id": "015dd5a9-733b-4819-a039-c5d6d1c0486b",
-            "name": "New folder\\未命名-1",
-            "symbol": "bg_new_folder_1",
-            "width": 50,
-            "height": 18,
-            "imageWidth": 400,
-            "imageHeight": 144,
-            "filename": "New folder\\未命名-1.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
             "id": "f97ca9be-dd1a-4654-94a4-836f3b69e100",
             "name": "New folder\\gate_close",
             "symbol": "bg_new_folder_gate_close",
@@ -26409,7 +26508,8 @@
             "imageWidth": 240,
             "imageHeight": 160,
             "filename": "New folder\\gate_closemenu controlls.png",
-            "tileColors": []
+            "tileColors": [],
+            "autoColor": false
         },
         {
             "id": "e16f8dfb-88f2-456a-bfc0-0d4453dae2b3",
@@ -26696,6 +26796,18 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "New folder\\top down\\towers4.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "015dd5a9-733b-4819-a039-c5d6d1c0486b",
+            "name": "New folder\\未命名-1",
+            "symbol": "bg_new_folder_1",
+            "width": 50,
+            "height": 18,
+            "imageWidth": 400,
+            "imageHeight": 144,
+            "filename": "New folder\\未命名-1.png",
             "tileColors": [],
             "autoColor": false
         },
@@ -66393,6 +66505,11 @@
             "symbol": "var_kt_quest_p2"
         },
         {
+            "id": "24",
+            "name": "Wine glass",
+            "symbol": "var_wine_glass"
+        },
+        {
             "id": "5a4c93bc-d0dc-4d4d-b312-df3c4651bccb__L1",
             "name": "Local 1",
             "symbol": "var_local_0"
@@ -66450,9 +66567,9 @@
         }
     ],
     "settings": {
-        "startSceneId": "734bbf4d-a959-410d-ab30-734beb812d59",
-        "startX": 1,
-        "startY": 1,
+        "startSceneId": "99800e61-d1fb-4771-971b-f062536f7035",
+        "startX": 14,
+        "startY": 4,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
@@ -66460,9 +66577,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": true,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 217,
-        "worldScrollY": 1066,
-        "zoom": 125,
+        "worldScrollX": 532,
+        "worldScrollY": 1092,
+        "zoom": 100,
         "sgbEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
