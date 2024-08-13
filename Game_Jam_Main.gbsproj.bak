@@ -386,9 +386,20 @@
                 {
                     "command": "EVENT_FADE_IN",
                     "args": {
-                        "speed": 5
+                        "speed": 4
                     },
                     "id": "1538b238-5334-4e9f-809b-5961ebedaa61"
+                },
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "21",
+                        "value": {
+                            "type": "number",
+                            "value": 1
+                        }
+                    },
+                    "id": "753a3e91-e41e-4b1c-b976-bd1b53f38d5b"
                 },
                 {
                     "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -416,7 +427,7 @@
                             "value": 0
                         },
                         "direction": "",
-                        "fadeSpeed": 4
+                        "fadeSpeed": 2
                     },
                     "id": "631ed6b2-2b07-4917-8de3-f0fb4a7bbf02"
                 }
@@ -1682,7 +1693,7 @@
                             }
                         },
                         "__collapseElse": true,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -2548,7 +2559,7 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "d91242b2-a783-45db-bfe8-99c1ce51b05e"
         },
         {
             "name": "Inner East GateHouse/iegate_house",
@@ -3580,7 +3591,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "Kitchen Tower/part1",
@@ -4618,7 +4630,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "The cooked Fish\nsmells tasty"
+                                    "The cooked fish\nsmells tasty."
                                 ],
                                 "avatarId": ""
                             },
@@ -4640,7 +4652,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Stacks of\nvegetables"
+                                    "Stacks of\nvegetables."
                                 ],
                                 "avatarId": ""
                             },
@@ -4682,7 +4694,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "Great Hall",
@@ -6084,8 +6097,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "A sword on \ndisplay ",
-                                    "The hilt has worn \noff from battles"
+                                    "A slightly dulled\nsword is on \ndisplay.",
+                                    "It has seen many \nwars...",
+                                    "the hilt is \nincredibly worn."
                                 ],
                                 "avatarId": ""
                             },
@@ -6125,8 +6139,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "A sword on \ndisplay ",
-                                                "The grip is now \nempty"
+                                                "A slightly dulled\nsword is on \ndisplay.",
+                                                "The hilt has\nalmost come off."
                                             ],
                                             "avatarId": ""
                                         },
@@ -6138,8 +6152,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "A sword on \ndisplay ",
-                                                "there something\ninside the grip",
+                                                "A slightly dulled\nsword is on \ndisplay.",
+                                                "No one will \nnotice if I play--\nI mean practice!",
+                                                "...there's \nsomething\ninside the grip?",
                                                 "You found \nTEAR NOTE B"
                                             ],
                                             "avatarId": ""
@@ -6210,7 +6225,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "SE_Tower/part1",
@@ -6814,10 +6830,11 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "The Knife is \nstuck between",
-                                    "the gap of the\ntable",
-                                    "possibly used by\nsomeone way ",
-                                    "stronger than you"
+                                    "The knife is \nstuck deep in the",
+                                    "wood of the table.",
+                                    "Possibly used by\nsomeone waaaaaay ",
+                                    "stronger than you!",
+                                    "Maybe an ostrich?"
                                 ],
                                 "avatarId": ""
                             },
@@ -6856,9 +6873,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You open the \nbottle",
-                                                "It's empty inside",
-                                                "You take the bottle"
+                                                "You open the \nbottle.",
+                                                "It's empty inside.",
+                                                "You take the bottle."
                                             ],
                                             "avatarId": ""
                                         },
@@ -6905,8 +6922,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "There's bottles\non the table but",
-                                    "It's not worth the \nrisk to *get* more"
+                                    "There are bottles\non the table but",
+                                    "It's not worth the \nrisk to *borrow* \nmore."
                                 ],
                                 "avatarId": ""
                             },
@@ -6928,8 +6945,9 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Leftover bread with\nserval bites ",
-                                    "on each piece of \nbread"
+                                    "Leftover bread with\nseveral bites ",
+                                    "on each piece of \nbread.",
+                                    "It's either mice\nor children..."
                                 ],
                                 "avatarId": ""
                             },
@@ -6952,8 +6970,9 @@
                             "args": {
                                 "text": [
                                     "Multiple barrels\nstack together",
-                                    "You open one of the\nbarrels",
-                                    "It's full of\ngrind wheat"
+                                    "You open one of the\nbarrels....",
+                                    "It's full of\nground wheat!",
+                                    "It feels good when\nyou run it through\nyour feathers!"
                                 ],
                                 "avatarId": ""
                             },
@@ -6995,7 +7014,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "SW1/part1",
@@ -7517,8 +7537,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You open one of \nthe chest",
-                                                "You take a long\niron stick"
+                                                "You open one of \nthe chests.",
+                                                "You take a long\niron stick."
                                             ],
                                             "avatarId": ""
                                         },
@@ -7562,8 +7582,8 @@
                             "args": {
                                 "text": [
                                     "There are some\nvaluable items",
-                                    "in some of the\npockets",
-                                    "But you don't want \nto risk your life"
+                                    "in some of the\npockets.",
+                                    "Let's not risk it!\nLet's not ruffle\nany feathers!"
                                 ],
                                 "avatarId": ""
                             },
@@ -7591,7 +7611,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "NE_TOWER",
@@ -8695,10 +8716,10 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Huh.....",
+                                                "Huh...a crow...",
                                                 "How do you manage \nto get here?  ",
-                                                "A letter?",
-                                                "It's in master's\nhand"
+                                                "...A letter?",
+                                                "It's in master's\nhand."
                                             ],
                                             "avatarId": ""
                                         },
@@ -8730,8 +8751,9 @@
                                             "text": [
                                                 "My master was a\npowerful sorcerer ",
                                                 "She came from\nanother world",
-                                                "and was a 'human'\nbefore",
-                                                "Right now\nshe's a cat"
+                                                "and was a 'human'\nbefore.",
+                                                "Right now\nshe's a cat,",
+                                                "she prefers this\nform at the \nmoment."
                                             ],
                                             "avatarId": ""
                                         },
@@ -8906,9 +8928,9 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "The Cat is staring \nat you",
+                                                            "The Cat is staring \nat you.",
                                                             "It seems it's \nfamiliar with",
-                                                            "this strange space\n...."
+                                                            "this strange space."
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -8931,11 +8953,11 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "A small bird walks\ninto my domain?",
-                                                            "How foolish and \nreckless..",
-                                                            "Give me something \nto eat..like",
-                                                            "...Fish \nMaybe...?",
-                                                            "And I will give \nback the letter"
+                                                            "A small bird... \nin my domain?",
+                                                            "Don't you know\nBirds make tasty\nsnackies?",
+                                                            "But…I'll spare you\nIf you give me something \nto eat...",
+                                                            "and I will return\nthis piece of\npaper ",
+                                                            "that's so\nimportant to you."
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -8957,7 +8979,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Give dried Cod\nto Cat?"
+                                                                        "Give dried fish\nto Cat?"
                                                                     ],
                                                                     "avatarId": ""
                                                                 },
@@ -9005,7 +9027,7 @@
                                                                             "args": {
                                                                                 "text": [
                                                                                     "My favorite snack!",
-                                                                                    "Here's your letter",
+                                                                                    "Here's your letter,\nbye bye birdie.",
                                                                                     "You received\nthe LETTER!"
                                                                                 ],
                                                                                 "avatarId": ""
@@ -9097,7 +9119,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "MASTER HAPPY\nYOU GOOD"
+                                                "MASTER HAPPY!\nYOU GOOOOOOD!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -9109,8 +9131,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "YOU GREET MASTER \nNOW",
-                                                "OR I EAT YOU WHOLE"
+                                                "YOU GREET MASTER \nNOW!",
+                                                "OR I EAT YOU WHOLE!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -10056,36 +10078,21 @@
                     "height": 2,
                     "script": [
                         {
-                            "command": "EVENT_IF_INPUT",
+                            "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "input": [
-                                    "down"
-                                ],
-                                "__collapseElse": true
+                                "sceneId": "f6233828-6415-4c6f-98ab-860d84312657",
+                                "x": {
+                                    "type": "number",
+                                    "value": 9
+                                },
+                                "y": {
+                                    "type": "number",
+                                    "value": 5
+                                },
+                                "direction": "",
+                                "fadeSpeed": "2"
                             },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_SWITCH_SCENE",
-                                        "args": {
-                                            "sceneId": "f6233828-6415-4c6f-98ab-860d84312657",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 9
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 6
-                                            },
-                                            "direction": "",
-                                            "fadeSpeed": "2"
-                                        },
-                                        "id": "729e67d0-8e6a-450f-bd70-53e4f468a3bb"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "07369073-af15-4466-8366-e171a63d25f7"
+                            "id": "b99e7f81-1301-4bcf-8f7d-bd1595617772"
                         }
                     ],
                     "leaveScript": []
@@ -10123,7 +10130,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "South Dam Platform/ scene",
@@ -10816,13 +10824,14 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Ho-hoo!You look \nnervous Young Man",
+                                    "Ho-ho! You look \nnervous cyfaill!",
                                     "You have an \nimportant message",
                                     "to the man \nhimself?",
-                                    "and you lost it\nto some dark cloud",
-                                    "That's some bad\nomen...But",
-                                    "I saw something\nsneak into the",
-                                    "Castle.\nHope this helps"
+                                    "...and it got lost \nwhen you passed ",
+                                    "a dark cloud?",
+                                    "That's a bad\nomen...but",
+                                    "I saw something\nsneak into the\ncastle.",
+                                    "Hope this helps \ncyfaill."
                                 ],
                                 "avatarId": ""
                             },
@@ -10858,7 +10867,7 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "playerSpriteSheetId": ""
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "NE_TOWER/part2",
@@ -11599,7 +11608,8 @@
                                         "args": {
                                             "text": [
                                                 "The bed looks\nsoft and you wish",
-                                                "to sleep on it"
+                                                "to sleep on it.",
+                                                "...you wipe the \ndrool off \nyour mouth."
                                             ],
                                             "avatarId": ""
                                         },
@@ -11611,7 +11621,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You search under \nthe bed",
+                                                "You search under \nthe bed.",
                                                 "You found \nTEAR NOTE A"
                                             ],
                                             "avatarId": ""
@@ -11683,7 +11693,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "SE_Tower/part2",
@@ -12155,7 +12166,7 @@
                                         "args": {
                                             "text": [
                                                 "There are multiple\nvegetables inside..",
-                                                "Nothing worth\nsearching inside"
+                                                "Nothing worth\nsearching inside."
                                             ],
                                             "avatarId": ""
                                         },
@@ -12170,7 +12181,7 @@
                                                 "You open the \nstorage boxes",
                                                 "You see multiple\nvegetables...",
                                                 "and there's \nsomething shinny!",
-                                                "You obtained the \nSouthWest Key"
+                                                "You obtained the \nSouthWest Key!"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -12250,7 +12261,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "Kitchen Tower/part2",
@@ -13634,8 +13646,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "There's more fish\nbut It's not worth",
-                                                "the risk to **get**\nmore"
+                                                "There's more fish\nhanging...",
+                                                "but I don't think\nI should 'borrow'\nmore.",
+                                                "And the eyes keep\nstaring at me..."
                                             ],
                                             "avatarId": ""
                                         },
@@ -13647,9 +13660,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Some dried fish \nare hanged",
+                                                "Some dried fish \nare hanging",
                                                 "on the shelf\nYou take the",
-                                                "Dried Fish"
+                                                "Dried Fish."
                                             ],
                                             "avatarId": ""
                                         },
@@ -13692,7 +13705,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "You look outside \nthe serving window"
+                                    "You look outside \nthe serving window..."
                                 ],
                                 "avatarId": "",
                                 "__collapse": false
@@ -13735,7 +13748,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "You new one!\nstart working!"
+                                                "You! Crow! Stop\nstanding around \nand get to work!"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -13803,7 +13816,7 @@
                                                                         }
                                                                     },
                                                                     "__collapseElse": false,
-                                                                    "__collapse": true
+                                                                    "__collapse": false
                                                                 },
                                                                 "children": {
                                                                     "true": [
@@ -13811,7 +13824,10 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "No bad Kid",
+                                                                                    "Good going, kid!",
+                                                                                    "I hope Ei Gras\nenjoys the Caw\n",
+                                                                                    "I needed to check \naround the castle\nfor the \ningredients\n",
+                                                                                    "but now that \nwe're done...",
                                                                                     "You get the\nSW Upper KEY!"
                                                                                 ],
                                                                                 "avatarId": "",
@@ -13881,9 +13897,9 @@
                                                                             "command": "EVENT_TEXT",
                                                                             "args": {
                                                                                 "text": [
-                                                                                    "NO Wine..?",
+                                                                                    "No wine..?",
                                                                                     "Why everything\nhas gone missing",
-                                                                                    "It must be in some\ntower "
+                                                                                    "It must be in one \nof the towers... "
                                                                                 ],
                                                                                 "avatarId": "",
                                                                                 "time": 0.2,
@@ -13916,7 +13932,7 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "You pass the \nHoney"
+                                                                        "You pass the \nhoney."
                                                                     ],
                                                                     "avatarId": "",
                                                                     "__collapse": false
@@ -13941,10 +13957,11 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Wait!\nDon't leave yet!"
+                                                                        "Not bad, kid!",
+                                                                        "Wait don't go..."
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__collapse": true
+                                                                    "__collapse": false
                                                                 },
                                                                 "id": "549d4d3a-8dca-4ece-96be-5dc7386ecc64"
                                                             },
@@ -13958,7 +13975,7 @@
                                                                         "type": "number",
                                                                         "value": 5
                                                                     },
-                                                                    "__collapse": true
+                                                                    "__collapse": false
                                                                 },
                                                                 "id": "77b1783d-f6b4-4954-a60c-29aa54be113b"
                                                             },
@@ -13966,10 +13983,10 @@
                                                                 "command": "EVENT_TEXT",
                                                                 "args": {
                                                                     "text": [
-                                                                        "Give me the Wine \nQUICK"
+                                                                        "GET ME SOME WINE!"
                                                                     ],
                                                                     "avatarId": "",
-                                                                    "__collapse": true
+                                                                    "__collapse": false
                                                                 },
                                                                 "id": "78ea0f5b-6891-4166-8dce-a34c6d48e74f"
                                                             },
@@ -14056,10 +14073,10 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "GIVE ME HONEY"
+                                                            "GET ME SOME HONEY!"
                                                         ],
                                                         "avatarId": "",
-                                                        "__collapse": true
+                                                        "__collapse": false
                                                     },
                                                     "id": "b18ec7a3-dbd8-4cf0-a610-8dcdaac82682"
                                                 },
@@ -14119,7 +14136,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "SW1/part2",
@@ -14612,8 +14630,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "you open the \nwardobe",
-                                    "You found nothing\nbut clothes"
+                                    "You open the \nwardrobe.",
+                                    "You find nothing\nbut clothes."
                                 ],
                                 "avatarId": ""
                             },
@@ -14659,8 +14677,8 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "even it's high\nabove",
-                                                "The ceiling is\nwell cleaned"
+                                                "Even if it's very \nhigh...",
+                                                "the ceiling is\nwell cleaned!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -14701,8 +14719,8 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "you use the stick\nto reach the ",
-                                                            "ceiling\nyou find the",
+                                                            "You use the stick\nto reach the ",
+                                                            "top of the \nwardrobe and\nyou find the",
                                                             "NW TOWER KEY!"
                                                         ],
                                                         "avatarId": "",
@@ -14762,8 +14780,8 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "you look at the\nfireplace",
-                                    "There's nothing \nhere"
+                                    "You look at the\nfireplace",
+                                    "There's nothing \nhere."
                                 ],
                                 "avatarId": ""
                             },
@@ -14791,7 +14809,8 @@
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "playerSpriteSheetId": "b8238e3e-8c4b-45a5-8d56-3e0c93fc914d"
         },
         {
             "name": "coridors/TowerAREA4",
@@ -15234,10 +15253,11 @@
                                             "text": [
                                                 "How did you manage",
                                                 "to get upstairs?",
-                                                "No one has access",
+                                                "No one has \nhad access",
                                                 "to that area for\nyears!",
-                                                "Maybe...",
-                                                "I'm still...\ndreaming ?"
+                                                "Wait...maybe...",
+                                                "I'm still...\ndreaming ?",
+                                                "Zzzzzzzz..."
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -15526,7 +15546,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Key required"
+                                                "*Key required*"
                                             ],
                                             "avatarId": ""
                                         },
@@ -16875,11 +16895,12 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Last night\nI saw there's",
-                                                "a skull floating\nin mid-air",
-                                                "It looked at me\nand give me a ",
-                                                "strange key?",
-                                                "You can take it ",
+                                                "Young messenger!\nYou have arrived \njust in time!",
+                                                "Last night I saw a\nskull floating, in\nmid- air",
+                                                "a skull...just\nfloating. To this, \nI swear.",
+                                                "He cast off a key \nwhile I gave the\nLord's prayer.",
+                                                "A key to aid \nmessengers in the \nage of yore.",
+                                                "Only this, and \nnothing more.",
                                                 "You get the \nSTRANGE KEY"
                                             ],
                                             "avatarId": "",
@@ -16904,12 +16925,11 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "young messenger Not\nsure if you will",
-                                                "want to hear this\nbut your arrival",
-                                                "is just on time..\n",
-                                                "From what I heard\nthere's some ",
-                                                "scheming happening\nin the NW Tower",
-                                                "It's something\nabout the well..."
+                                                "Well.There have\nbeen some...",
+                                                "*mutters*\n...scheming.",
+                                                "From what I've\nheard there's some ",
+                                                "it takes place in\nin the NW Tower.",
+                                                "I heard some \nsoldiers talk \nabout a well..."
                                             ],
                                             "avatarId": ""
                                         },
@@ -17716,7 +17736,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Hope you get\nYour stuff back"
+                                                "I hope you get\nyour stuff back!"
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -17729,9 +17749,13 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "There's lots of \nmissing items in",
-                                                "the past month.\nMy ring has gone",
-                                                "missing last week!\n"
+                                                "There have been a \nlot of missing\nitems ",
+                                                "in the past \nmonth.",
+                                                "Now my ring has \nbeen taken!",
+                                                "This strange breeze\nhas lingered...",
+                                                "my ring has been \ngone since...\n",
+                                                "Since you arrived!\nWhat have you done\nwith it, lleidr??",
+                                                "Did you take it \nwhile I was\npreening??"
                                             ],
                                             "avatarId": ""
                                         },
@@ -17770,10 +17794,11 @@
                                                     "args": {
                                                         "text": [
                                                             "Wait...\nThat's my ring!",
+                                                            "Thank you cyfaill!",
                                                             "You lost your\nstuff as well?",
-                                                            "I saw the cloud \nflew towards ",
+                                                            "I saw a cloud \nfly towards",
                                                             "NE Tower",
-                                                            "Let me help u\na bit",
+                                                            "Let me help you \nafter you helped \nme, cyfaill.",
                                                             "You get the SW\nTower Key!"
                                                         ],
                                                         "avatarId": "",
@@ -18130,10 +18155,11 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "you look at the \nspill and smell",
+                                                "you look at the \nsmall puddle and",
+                                                "recognise the \nsmell...",
                                                 "It's wine!",
                                                 "You wonder if\nthere's",
-                                                "anything to hold\nit"
+                                                "anything that can\nhold it."
                                             ],
                                             "avatarId": ""
                                         },
@@ -18161,9 +18187,11 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "You use the\ncontainer to ",
-                                                            "collect the wine\n",
-                                                            "You got a bottle\nof Wine"
+                                                            "You use the\nglass to ",
+                                                            "collect the wine.\n",
+                                                            "I can't look like\na drunkard!",
+                                                            "You got a 'nice \ncarrier'",
+                                                            "for the wine."
                                                         ],
                                                         "avatarId": ""
                                                     },
@@ -18212,7 +18240,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "The spills are\n everywhere...."
+                                                "It's spilled \neverywhere!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -19352,9 +19380,9 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Oh there's the \nletter",
-                                                "Fine you may pass",
-                                                "Keep it brief"
+                                                "Oh there's the \nletter!",
+                                                "Fine, you may pass\n*grumbles*",
+                                                "Keep it brief."
                                             ],
                                             "avatarId": ""
                                         },
@@ -19390,10 +19418,11 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "This is the\nGreat Hall ",
+                                                "This is the\nGreat Hall. ",
                                                 "No one can get in\nexcept servants ",
-                                                "and close \nrelatives ",
-                                                "You have to prove \nyourself first"
+                                                "and close \nrelatives. ",
+                                                "You have to prove \nyourself ",
+                                                "before \nyou can enter."
                                             ],
                                             "avatarId": "",
                                             "__collapse": false
@@ -19733,7 +19762,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "It's locked"
+                                                "It's locked."
                                             ],
                                             "avatarId": ""
                                         },
@@ -20345,7 +20374,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "NE Towe"
+                                    "NE Tower"
                                 ],
                                 "avatarId": ""
                             },
@@ -20439,7 +20468,7 @@
                                             "sceneId": "ac860a39-7420-42c4-86c4-481a0f177956",
                                             "x": {
                                                 "type": "number",
-                                                "value": 1
+                                                "value": 2
                                             },
                                             "y": {
                                                 "type": "number",
@@ -20457,7 +20486,7 @@
                                         "args": {
                                             "text": [
                                                 "It won't open ",
-                                                "from this side "
+                                                "from this side. "
                                             ],
                                             "avatarId": ""
                                         },
@@ -20978,10 +21007,10 @@
                     "args": {
                         "text": [
                             "You delivered the\nmessage on time",
-                            "along with the\nweakness of the well",
-                            "could be attacked\nby enemy forces",
-                            "Gilbert de Clare \nsend troops to",
-                            "look after the well\nand reinforcements",
+                            "and the King has\ndealt with the\nwell's breach",
+                            "which could have \nbeen attacked\nby enemy forces!",
+                            "Gilbert de Clare \nsent troops to",
+                            "look contain the \nwell and gathered \nreinforcements.",
                             "The castle and its\nresidence are safe!",
                             "You get ending A"
                         ],
@@ -21456,8 +21485,8 @@
                                         "args": {
                                             "text": [
                                                 "You saw that \nas well?",
-                                                "There's a soilder\ngruading the",
-                                                "platform today\nHe might help you"
+                                                "There's a soldier \nguarding the",
+                                                "platform today.\nHe might help you!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -21537,9 +21566,9 @@
                             "args": {
                                 "text": [
                                     "The strange wind?",
-                                    "You are not the \nfirst one told us ",
+                                    "You are not the \nfirst one to \ncomplain about \nthis.",
                                     "The chef\nin the kitchen",
-                                    "always complain \nabout it"
+                                    "always complains \nabout it..."
                                 ],
                                 "avatarId": ""
                             },
@@ -21896,7 +21925,8 @@
                                             "text": [
                                                 "What a strange \nwind...",
                                                 "!!!",
-                                                "My letter's\nGone!"
+                                                "My letter!\nIt's...",
+                                                "GONE!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -22632,7 +22662,7 @@
                                 "value": 0
                             }
                         },
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -23470,16 +23500,16 @@
                     "command": "EVENT_TEXT",
                     "args": {
                         "text": [
-                            "You delivered the\nmessage on time",
-                            "Gilbert de Clare \nsend  reinforcements ",
-                            "and prepare to\ndefend his land",
-                            "the army defended\nthe opposite troops",
-                            "but after that\nthe residences are",
-                            "getting weaker day\nby day....",
-                            "with people report\ngetting ill from",
-                            "unknown sources",
+                            "You delivered the\nmessage on time!",
+                            "Gilbert de Clare \nsent reinforcements ",
+                            "and prepared to\ndefend his land",
+                            "The army was \nfighting well",
+                            "but the residents\nwere struggling",
+                            "with resources \nslowly dwindling",
+                            "and people slowly\ngetting ill from\nlack of food and\nmedicine.",
                             "Will they able to \ndefend the castle",
-                            "in the future?\nYou get Ending B"
+                            "in the future\nand save the \npeople?",
+                            "You get Ending B"
                         ],
                         "avatarId": ""
                     },
@@ -23903,7 +23933,7 @@
                 {
                     "command": "EVENT_LOOP",
                     "args": {
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "children": {
                         "true": [
@@ -24366,7 +24396,7 @@
                 0,
                 0
             ],
-            "autoFadeSpeed": 4,
+            "autoFadeSpeed": 2,
             "id": "734bbf4d-a959-410d-ab30-734beb812d59",
             "symbol": "scene_11",
             "x": 60,
@@ -24375,21 +24405,79 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_SWITCH_SCENE",
+                    "command": "EVENT_IF_INPUT",
                     "args": {
-                        "sceneId": "5292e4ae-182d-4a3d-a67c-8059e6f92144",
-                        "x": {
-                            "type": "number",
-                            "value": 2
-                        },
-                        "y": {
-                            "type": "number",
-                            "value": 3
-                        },
-                        "direction": "",
-                        "fadeSpeed": 4
+                        "input": [
+                            "a",
+                            "b",
+                            "right",
+                            "down",
+                            "up",
+                            "left"
+                        ],
+                        "__collapseElse": false
                     },
-                    "id": "1cacd618-685e-4b0b-91fa-d3f209aee0ad"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "crash",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 590,
+                                    "duration": 0.12,
+                                    "wait": true,
+                                    "effect": 0
+                                },
+                                "id": "28170df4-e49e-48fd-aafa-39ff4c285fd3"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "a98383bf-bbca-4bc1-b19a-55bb60742730",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 2
+                                },
+                                "id": "a0b6b0c7-babe-4f72-8796-c2b28f8b90a4"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "5292e4ae-182d-4a3d-a67c-8059e6f92144",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 3
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 4
+                                },
+                                "id": "7d980bea-a458-494e-9dae-27a18ea93778"
+                            }
+                        ]
+                    },
+                    "id": "e6c80b0d-bfc9-40c7-8670-c2ab490c8697"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "fc8a4e7b-a55a-42ed-8427-ea3abaddb610"
+                    },
+                    "id": "1f86ab45-09a4-4075-b981-668fd35ab78e"
                 }
             ],
             "playerHit1Script": [],
@@ -24397,7 +24485,7 @@
             "playerHit3Script": []
         },
         {
-            "name": "Scene 30",
+            "name": "Scene 35",
             "backgroundId": "175273f0-c2d4-449b-b5b7-c1a3033210cf",
             "tilesetId": "",
             "width": 20,
@@ -24767,7 +24855,7 @@
                 0,
                 0
             ],
-            "autoFadeSpeed": 5,
+            "autoFadeSpeed": 2,
             "id": "5292e4ae-182d-4a3d-a67c-8059e6f92144",
             "symbol": "scene_22",
             "x": 240,
@@ -24776,21 +24864,72 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_SWITCH_SCENE",
+                    "command": "EVENT_IF_INPUT",
                     "args": {
-                        "sceneId": "06368fed-d372-403c-ad78-49004efe12eb",
-                        "x": {
-                            "type": "number",
-                            "value": 4
-                        },
-                        "y": {
-                            "type": "number",
-                            "value": 2
-                        },
-                        "direction": "",
-                        "fadeSpeed": 4
+                        "input": [
+                            "a",
+                            "b",
+                            "right",
+                            "down",
+                            "up",
+                            "left"
+                        ],
+                        "__collapseElse": false
                     },
-                    "id": "2ed9c6eb-6826-4429-956e-5b85e5b1f1c4"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "crash",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 590,
+                                    "duration": 0.12,
+                                    "wait": true,
+                                    "effect": 0
+                                },
+                                "id": "9d6986be-d460-43a6-a979-e106e6e5ba2d"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "a98383bf-bbca-4bc1-b19a-55bb60742730",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 2
+                                },
+                                "id": "efb0949d-ae1d-4837-9d68-3764d4ffc461"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "06368fed-d372-403c-ad78-49004efe12eb",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 4
+                                },
+                                "id": "2ed9c6eb-6826-4429-956e-5b85e5b1f1c4"
+                            }
+                        ]
+                    },
+                    "id": "3b3420c5-044d-4188-9370-a94eb11f92d5"
                 }
             ],
             "playerHit1Script": [],
@@ -24798,7 +24937,7 @@
             "playerHit3Script": []
         },
         {
-            "name": "Scene 30",
+            "name": "Scene 36",
             "backgroundId": "5d83e6b2-80cf-4c20-bae8-ad30e591f131",
             "tilesetId": "",
             "width": 20,
@@ -25168,7 +25307,7 @@
                 0,
                 0
             ],
-            "autoFadeSpeed": 5,
+            "autoFadeSpeed": 2,
             "id": "06368fed-d372-403c-ad78-49004efe12eb",
             "symbol": "scene_25",
             "x": 408,
@@ -25177,21 +25316,72 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_SWITCH_SCENE",
+                    "command": "EVENT_IF_INPUT",
                     "args": {
-                        "sceneId": "221917fd-4fce-4bff-af22-df6acddee8d9",
-                        "x": {
-                            "type": "number",
-                            "value": 0
-                        },
-                        "y": {
-                            "type": "number",
-                            "value": 0
-                        },
-                        "direction": "",
-                        "fadeSpeed": 4
+                        "input": [
+                            "a",
+                            "b",
+                            "right",
+                            "down",
+                            "up",
+                            "left"
+                        ],
+                        "__collapseElse": false
                     },
-                    "id": "12d60476-26e0-4e7d-aefe-8878335dd050"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "crash",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 590,
+                                    "duration": 0.12,
+                                    "wait": true,
+                                    "effect": 0
+                                },
+                                "id": "71c34c66-51c9-4a95-a1c3-c3aa078e878c"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "a98383bf-bbca-4bc1-b19a-55bb60742730",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 2
+                                },
+                                "id": "011940f7-028f-41a6-9d83-52a798429e2a"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "221917fd-4fce-4bff-af22-df6acddee8d9",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 4
+                                },
+                                "id": "5a59d12c-5f92-4e85-b292-212d52d0c207"
+                            }
+                        ]
+                    },
+                    "id": "565acf05-f0e4-4dce-bdfd-4407bbc22b6c"
                 }
             ],
             "playerHit1Script": [],
@@ -25199,7 +25389,7 @@
             "playerHit3Script": []
         },
         {
-            "name": "Scene 30",
+            "name": "Scene 37",
             "backgroundId": "8ba5954d-2db8-4bf2-890f-3fd7a697186f",
             "tilesetId": "",
             "width": 20,
@@ -25578,21 +25768,72 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_SWITCH_SCENE",
+                    "command": "EVENT_IF_INPUT",
                     "args": {
-                        "sceneId": "da611ffb-223f-406f-8591-f9b1d1d54478",
-                        "x": {
-                            "type": "number",
-                            "value": 0
-                        },
-                        "y": {
-                            "type": "number",
-                            "value": 0
-                        },
-                        "direction": "",
-                        "fadeSpeed": 4
+                        "input": [
+                            "a",
+                            "b",
+                            "right",
+                            "down",
+                            "up",
+                            "left"
+                        ],
+                        "__collapseElse": false
                     },
-                    "id": "294fe16e-282a-432e-af42-1c61b34259fa"
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SOUND_PLAY_EFFECT",
+                                "args": {
+                                    "type": "crash",
+                                    "priority": "medium",
+                                    "pitch": 4,
+                                    "frequency": 590,
+                                    "duration": 0.12,
+                                    "wait": true,
+                                    "effect": 0
+                                },
+                                "id": "db25f86e-b212-4def-bbca-824ae6fdb746"
+                            },
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "a98383bf-bbca-4bc1-b19a-55bb60742730",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 4
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 2
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 2
+                                },
+                                "id": "01b43632-079a-44ba-9da7-4025b4445cd3"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "da611ffb-223f-406f-8591-f9b1d1d54478",
+                                    "x": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "y": {
+                                        "type": "number",
+                                        "value": 0
+                                    },
+                                    "direction": "",
+                                    "fadeSpeed": 4
+                                },
+                                "id": "79066572-f3e5-46f3-bb9b-cebc8ba3740f"
+                            }
+                        ]
+                    },
+                    "id": "f412faf5-b67d-4249-91f7-8ba2e44456a1"
                 }
             ],
             "playerHit1Script": [],
@@ -26308,6 +26549,90 @@
             "autoColor": false
         },
         {
+            "id": "33d378cd-f5e4-4502-ab65-9cc4c8aa4dda",
+            "name": "draft\\gate",
+            "symbol": "bg_gate",
+            "width": 61,
+            "height": 26,
+            "imageWidth": 493,
+            "imageHeight": 215,
+            "filename": "draft\\gate.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "0d918010-734a-4d38-8543-27ea89fce676",
+            "name": "draft\\Great Hall",
+            "symbol": "bg_great_hall",
+            "width": 17,
+            "height": 13,
+            "imageWidth": 141,
+            "imageHeight": 104,
+            "filename": "draft\\Great Hall.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "6098216a-b7a5-4193-96e5-00720d1c7827",
+            "name": "draft\\inner east gatehouse",
+            "symbol": "bg_inner_east_gatehouse",
+            "width": 57,
+            "height": 20,
+            "imageWidth": 462,
+            "imageHeight": 160,
+            "filename": "draft\\inner east gatehouse.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "f2888aa7-4d07-46fe-b631-e6a0cf646b77",
+            "name": "draft\\kitchen_tower",
+            "symbol": "bg_kitchen_tower",
+            "width": 71,
+            "height": 26,
+            "imageWidth": 571,
+            "imageHeight": 215,
+            "filename": "draft\\kitchen_tower.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "bcb89a01-a120-42d9-a959-457c5a839876",
+            "name": "draft\\SE_Tower",
+            "symbol": "bg_se_tower",
+            "width": 69,
+            "height": 25,
+            "imageWidth": 557,
+            "imageHeight": 200,
+            "filename": "draft\\SE_Tower.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "5952dc58-8aba-430b-bc13-7426d48f00e1",
+            "name": "draft\\SOUTH Dam platform",
+            "symbol": "bg_south_dam_platform",
+            "width": 62,
+            "height": 25,
+            "imageWidth": 499,
+            "imageHeight": 200,
+            "filename": "draft\\SOUTH Dam platform.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
+            "id": "92b5b8d9-85fe-46c3-aaf8-c4f39c104962",
+            "name": "draft\\SW Tower",
+            "symbol": "bg_sw_tower",
+            "width": 57,
+            "height": 25,
+            "imageWidth": 462,
+            "imageHeight": 200,
+            "filename": "draft\\SW Tower.png",
+            "tileColors": [],
+            "autoColor": false
+        },
+        {
             "id": "95d7e474-1193-4473-b844-59737cdcaa28",
             "name": "gate_closemenu controlls small",
             "symbol": "bg_gate_closemenu_controlls",
@@ -26316,54 +26641,6 @@
             "imageWidth": 120,
             "imageHeight": 80,
             "filename": "gate_closemenu controlls small.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "33d378cd-f5e4-4502-ab65-9cc4c8aa4dda",
-            "name": "gate",
-            "symbol": "bg_gate",
-            "width": 61,
-            "height": 26,
-            "imageWidth": 493,
-            "imageHeight": 215,
-            "filename": "gate.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "0d918010-734a-4d38-8543-27ea89fce676",
-            "name": "Great Hall",
-            "symbol": "bg_great_hall",
-            "width": 17,
-            "height": 13,
-            "imageWidth": 141,
-            "imageHeight": 104,
-            "filename": "Great Hall.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "6098216a-b7a5-4193-96e5-00720d1c7827",
-            "name": "inner east gatehouse",
-            "symbol": "bg_inner_east_gatehouse",
-            "width": 57,
-            "height": 20,
-            "imageWidth": 462,
-            "imageHeight": 160,
-            "filename": "inner east gatehouse.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "f2888aa7-4d07-46fe-b631-e6a0cf646b77",
-            "name": "kitchen_tower",
-            "symbol": "bg_kitchen_tower",
-            "width": 71,
-            "height": 26,
-            "imageWidth": 571,
-            "imageHeight": 215,
-            "filename": "kitchen_tower.png",
             "tileColors": [],
             "autoColor": false
         },
@@ -26800,18 +27077,6 @@
             "autoColor": false
         },
         {
-            "id": "015dd5a9-733b-4819-a039-c5d6d1c0486b",
-            "name": "New folder\\未命名-1",
-            "symbol": "bg_new_folder_1",
-            "width": 50,
-            "height": 18,
-            "imageWidth": 400,
-            "imageHeight": 144,
-            "filename": "New folder\\未命名-1.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
             "symbol": "bg_placeholder",
@@ -26824,30 +27089,6 @@
             "autoColor": false
         },
         {
-            "id": "bcb89a01-a120-42d9-a959-457c5a839876",
-            "name": "SE_Tower",
-            "symbol": "bg_se_tower",
-            "width": 69,
-            "height": 25,
-            "imageWidth": 557,
-            "imageHeight": 200,
-            "filename": "SE_Tower.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "5952dc58-8aba-430b-bc13-7426d48f00e1",
-            "name": "SOUTH Dam platform",
-            "symbol": "bg_south_dam_platform",
-            "width": 62,
-            "height": 25,
-            "imageWidth": 499,
-            "imageHeight": 200,
-            "filename": "SOUTH Dam platform.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
             "id": "842aa8ad-0a2c-44da-a060-29090f874c12",
             "name": "stars",
             "symbol": "bg_stars",
@@ -26856,18 +27097,6 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "tileColors": [],
-            "autoColor": false
-        },
-        {
-            "id": "92b5b8d9-85fe-46c3-aaf8-c4f39c104962",
-            "name": "SW Tower",
-            "symbol": "bg_sw_tower",
-            "width": 57,
-            "height": 25,
-            "imageWidth": 462,
-            "imageHeight": 200,
-            "filename": "SW Tower.png",
             "tileColors": [],
             "autoColor": false
         },
@@ -65883,7 +66112,7 @@
                                                 "type": "tone",
                                                 "priority": "high",
                                                 "pitch": 4,
-                                                "frequency": 370,
+                                                "frequency": 371,
                                                 "duration": 0.1,
                                                 "wait": true,
                                                 "effect": 0
@@ -65997,6 +66226,64 @@
                                     "false": []
                                 },
                                 "id": "88302d05-9769-47ca-a882-3da0276f54fe"
+                            },
+                            {
+                                "command": "EVENT_IF_CURRENT_SCENE_IS",
+                                "args": {
+                                    "sceneId": "a98383bf-bbca-4bc1-b19a-55bb60742730",
+                                    "__collapseElse": false
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_MUSIC_PLAY",
+                                            "args": {
+                                                "musicId": "5a3418bf-d31d-4f3c-9d91-9b095c69814a"
+                                            },
+                                            "id": "f94f9c3a-9cc4-4838-b5c6-2f23cd65853d"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "720c95b7-1b9e-4c64-9f99-faeeed94b4de"
+                            },
+                            {
+                                "command": "EVENT_IF_CURRENT_SCENE_IS",
+                                "args": {
+                                    "sceneId": "99800e61-d1fb-4771-971b-f062536f7035",
+                                    "__collapseElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_MUSIC_STOP",
+                                            "args": {},
+                                            "id": "b4bf7ab6-4c16-4b65-b2df-dc4d73bd62d9"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "ab919943-dc8f-4b0a-bc6c-916a20ab0b4f"
+                            },
+                            {
+                                "command": "EVENT_IF_CURRENT_SCENE_IS",
+                                "args": {
+                                    "sceneId": "99800e61-d1fb-4771-971b-f062536f7035",
+                                    "__collapseElse": true
+                                },
+                                "children": {
+                                    "true": [
+                                        {
+                                            "command": "EVENT_MUSIC_PLAY",
+                                            "args": {
+                                                "musicId": "5a3418bf-d31d-4f3c-9d91-9b095c69814a"
+                                            },
+                                            "id": "ad99f65b-dcf3-4b0e-bbf5-bbf8cf40afe1"
+                                        }
+                                    ],
+                                    "false": []
+                                },
+                                "id": "c6159377-2cc6-4c91-9b7c-ae47814bbf6b"
                             }
                         ],
                         "false": [
@@ -66577,8 +66864,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": true,
         "showCollisionExtraTiles": true,
-        "worldScrollX": 0,
-        "worldScrollY": 1461.3333740234375,
+        "worldScrollX": 480.6666564941406,
+        "worldScrollY": 660,
         "zoom": 100,
         "sgbEnabled": false,
         "customHead": "",
